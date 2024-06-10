@@ -12,7 +12,9 @@ function HomePage(){
                     Exercitationem est provident magnam, porro eum ipsam maxime tempore aperiam numquam tenetur neque natus? 
                     Voluptate iusto mollitia earum iure harum quisquam eius.
                 </p>
+
                 <SearchBar />
+                
                 <div className="boxes">
                     <div className="box">
                         <h1>16+</h1>
