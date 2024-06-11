@@ -1,20 +1,21 @@
 import { useState } from "react";
 import "./navbar.scss"
+import { Link } from "react-router-dom";
 
 function Navbar (){
     const [open, setOpen] = useState(false)
     return (
         <nav>
-            <div className="left">
-                <a href="/" className="logo">
-                <img src="/logo.png" alt=""></img>
-                <span>Estate</span>
-                </a>
-                <a href="/">Home</a>
-                <a href="/">About</a>
-                <a href="/">Contact</a>
-                <a href="/">Agents</a>
-            </div>
+           <div className="left">
+        <Link to="/" className="logo">
+          <img src="/logo.png" alt="logo" />
+          <span>esate</span>
+        </Link>
+        <Link to="/">HOME</Link>
+        <Link to="/">about</Link>
+        <Link to="/">contact</Link>
+        <Link to="/">agents</Link>
+      </div>
             <div className="right">
             <a href="/">Sign in</a>
             <a href="/" className="register">Sign up</a>
